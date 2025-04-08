@@ -5,3 +5,4 @@ ipykernel
 
 # python3 -m virtualenv .case_elo_env
 # pip install -r requirements.txt
+# source .case_elo_env/bin/activate
