@@ -1,6 +1,7 @@
 pandas
 matplotlib
 gdown
+ipykernel
 
 # python3 -m virtualenv .case_elo_env
 # pip install -r requirements.txt
