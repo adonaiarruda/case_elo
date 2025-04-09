@@ -37,35 +37,35 @@ A recomendação final estará em formato .txt na pasta analytics_data, tanto em
 
 ### Executando localmente
 1. Clone o repositório:
-    ```bash
-    git clone https://github.com/adonaiarruda/case_elo.git
-    cd case_elo
-    ```
+```bash
+git clone https://github.com/adonaiarruda/case_elo.git
+cd case_elo
+```
 2. Crie um ambiente virtual:
-    ```bash
-    python3 -m virtualenv .venv
-    ```
+```bash
+python3 -m virtualenv .venv
+```
 3. Ative o ambiente virtual:
     - No Linux/MacOS:
-      ```bash
-      source .venv/bin/activate
-      ```
-    - No Windows:
-      ```bash
-      .venv\Scripts\activate
-      ```
-4. Instale as dependências:
     ```bash
-    pip install -r requirements.txt
+    source .venv/bin/activate
     ```
+    - No Windows:
+    ```bash
+    .venv\Scripts\activate
+    ```
+4. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
 
 ### Executando no Google Colab
 1. Faça upload dos notebooks para o Google Colab.
 2. Certifique-se de carregar os dados necessários no ambiente do Colab.
 3. Instale as dependências diretamente no Colab, se necessário:
-    ```python
-    !pip install -r requirements.txt
-    ```
+```python
+!pip install -r requirements.txt
+```
 4. Execute as células do notebook conforme indicado.
 
 
@@ -79,7 +79,7 @@ Execute nesta ordem:
 
 Execute usando o comando: 
 ```bash
-    python3 pipeline/pipeline.py
+python3 pipeline/pipeline.py
 ```
 
 ## Arquivos de dados
