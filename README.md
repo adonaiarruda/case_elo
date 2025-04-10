@@ -2,11 +2,10 @@
 Resolução do desafio técnico para o processo seletivo de análise de dados do Elo Group 2025
 
 ## Estrutura de Pastas
-Este projeto 
+Este projeto conta com a seguinte estrutura de pastas:
 
 ```
 case_elo/
-├── data/                # Dados brutos e processados
 ├── notebooks/           # Notebooks Jupyter para análise e exploração
 │   ├── raw_data/        # Dados brutos
 │   ├── curated_data/    # Dados processados e organizados
@@ -33,39 +32,42 @@ A recomendação final estará em formato .txt na pasta analytics_data, tanto em
 
 ## Como executar
 
+### Requisitos
+- Foi utilizada versão python 3.12
+- Máquina deve ter ferramenta de gerenciamento de ambientes virtuais (como virtualenv) e git instaladas
 
 
 ### Executando localmente
 1. Clone o repositório:
-    ```bash
-    git clone https://github.com/adonaiarruda/case_elo.git
-    cd case_elo
-    ```
+```bash
+git clone https://github.com/adonaiarruda/case_elo.git
+cd case_elo
+```
 2. Crie um ambiente virtual:
-    ```bash
-    python3 -m virtualenv .venv
-    ```
+```bash
+python3 -m virtualenv .venv
+```
 3. Ative o ambiente virtual:
     - No Linux/MacOS:
-      ```bash
-      source .venv/bin/activate
-      ```
-    - No Windows:
-      ```bash
-      .venv\Scripts\activate
-      ```
-4. Instale as dependências:
     ```bash
-    pip install -r requirements.txt
+    source .venv/bin/activate
     ```
+    - No Windows:
+    ```bash
+    .venv\Scripts\activate
+    ```
+4. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
 
 ### Executando no Google Colab
 1. Faça upload dos notebooks para o Google Colab.
 2. Certifique-se de carregar os dados necessários no ambiente do Colab.
 3. Instale as dependências diretamente no Colab, se necessário:
-    ```python
-    !pip install -r requirements.txt
-    ```
+```python
+!pip install -r requirements.txt
+```
 4. Execute as células do notebook conforme indicado.
 
 
@@ -79,8 +81,15 @@ Execute nesta ordem:
 
 Execute usando o comando: 
 ```bash
-    python3 pipeline/pipeline.py
+python3 pipeline/pipeline.py
 ```
+As recomendações de ZCTAs estão no arquivo: 
+```bash
+pipeline/analytics_data/proposed_zctas.txt
+```
+
+obs: É possível que ocorra erro no download dos dados. Aguarde alguns segundos e execute novamente.
+
 
 ## Arquivos de dados
 
