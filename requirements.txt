@@ -1,8 +1,9 @@
-pandas
-matplotlib
-gdown
-ipykernel
-seaborn
+pandas == 2.2.3
+matplotlib == 3.10.1
+gdown == 5.2.0
+ipykernel == 6.29.5
+seaborn == 0.13.2
+numpy == 2.2.4
 
 # python3 -m virtualenv .case_elo_env
 # pip install -r requirements.txt

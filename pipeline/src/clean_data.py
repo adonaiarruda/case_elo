@@ -4,6 +4,10 @@ import pandas as pd
 import numpy as np
 
 class CleaningStage(PipelineStage):
+    """Cleaning stage for the pipeline.
+    Args:
+        PipelineStage (obj):  Basic structure for all pipeline stages.
+    """
     def execute(self, data=None):
         """Execute the cleaning stage of the pipeline.            
 
@@ -208,6 +212,15 @@ class CleaningStage(PipelineStage):
             raise
     
     def clean_economic_data(self, df_economic):
+        """Clean economic data in the pipeline
+
+        Args:
+            df_economic (pd.Dataframe): Economic data of ZCTAs
+
+        Returns:
+            pd.DataFrame: Cleaned economic data
+        """
+
         try:
             # Limpeza de dados econômicos
             # Remove duplicatas
@@ -253,6 +266,15 @@ class CleaningStage(PipelineStage):
             self.logger.error(f"Erro ao limpar dados econômicos: {e}")
             raise
     def clean_geographic_data(self, df_geographic):
+        """Clean geographic data in the pipeline
+
+        Args:
+            df_geographic (pd.Dataframe): ZCTAs geographic data
+
+        Returns:
+            pd.DataFrame: Cleaned geographic data
+        """
+        
         try:
             # Remove NAs
             df_geographic = df_geographic.dropna(subset=['Zipcode'])

@@ -2,7 +2,7 @@
 Resolução do desafio técnico para o processo seletivo de análise de dados do Elo Group 2025
 
 ## Estrutura de Pastas
-Este projeto 
+Este projeto conta com a seguinte estrutura de pastas:
 
 ```
 case_elo/
@@ -33,6 +33,9 @@ A recomendação final estará em formato .txt na pasta analytics_data, tanto em
 
 ## Como executar
 
+### Requisitos
+- Foi utilizada versão python 3.12
+- Máquina deve ter ferramenta de gerenciamento de ambientes virtuais (como virtualenv) e git instaladas
 
 
 ### Executando localmente
@@ -81,6 +84,13 @@ Execute usando o comando:
 ```bash
 python3 pipeline/pipeline.py
 ```
+As recomendações de ZCTAs estão no arquivo: 
+```bash
+pipeline/analytics_data/proposed_zctas.txt
+```
+
+obs: É possível que ocorra erro no download dos dados. Aguarde alguns segundos e execute novamente.
+
 
 ## Arquivos de dados
 

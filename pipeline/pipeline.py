@@ -5,12 +5,22 @@ import src.analytics as analytics
 
 
 class Pipeline:
+    """Pipeline object
+    """
     def __init__(self, name, stages):
+        """_summary_
+
+        Args:
+            name (str): Pipeline name
+            stages (list(PipelineStage): stages to run
+        """
         self.name = name
         self.stages = stages
         self.logger = logging.getLogger(name)
 
     def execute(self):
+        """ Execute pipeline to solve the case
+        """
         self.logger.info(f"Iniciando pipeline: {self.name}")
         data = None
         for stage in self.stages:
@@ -46,7 +56,7 @@ analytics_stage = analytics.AnalyticsStage(config_analytics)
 
 # Cria pipeline
 pipeline = Pipeline(
-    name = "Pipeline de Dados Rede de Laboratórios",
+    name = "Rede de Laboratórios",
     stages = [
         get_data_stage, 
         unzip_stage,

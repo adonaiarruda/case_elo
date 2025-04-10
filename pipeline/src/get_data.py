@@ -3,7 +3,20 @@ import zipfile
 from src.utils import PipelineStage
 
 class ExtractStage(PipelineStage):
+    """Download stage for the pipeline.
+
+    Args:
+        PipelineStage (obj):  Basic structure for all pipeline stages.
+    """
     def execute(self, data=None):
+        """Execute the download stage of the pipeline.
+
+        Args:
+            None
+
+        Returns:
+            str: Name of the downloaded file.
+        """
         try:
             file_id = self.config['file_id']
             url = f"https://drive.google.com/uc?id={file_id}"
@@ -19,8 +32,20 @@ class ExtractStage(PipelineStage):
             raise
 
 class UnzipStage(PipelineStage):
+    """Unzip stage for the pipeline.
+
+    Args:
+        PipelineStage (obj):  Basic structure for all pipeline stages.
+    """
     
     def execute(self, data=None):
+        """Execute unzip stage
+
+        Args:
+            None
+        Returns:
+            str: path to the unzipped files
+        """
         self.logger.info(f"Config: {self.config}")
         zipfilename = self.config.get('zipfilename')
         try:

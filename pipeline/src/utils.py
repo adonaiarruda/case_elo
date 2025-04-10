@@ -3,8 +3,19 @@ import logging
 from abc import ABC, abstractmethod
 
 class PipelineStage(ABC):
+    """Superclass for all pipeline stages. 
+    Basic structure for all pipeline stages.
+
+    Args:
+        ABC (obj): Abstract Base Class lib
+    """
     # Base para pipeline
     def __init__(self, config):
+        """Pipeline stage initialization
+
+        Args:
+            config (dict): conigs to run the pipeline stage
+        """
         self.config = config
         self.config['pipeline_folder'] = 'pipeline/'
         self.config['raw_data_folder'] = 'raw_data/'

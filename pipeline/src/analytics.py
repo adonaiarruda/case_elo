@@ -6,6 +6,11 @@ from src.utils import PipelineStage
 
 
 class AnalyticsStage(PipelineStage):
+    """Analytics stage for the pipeline.
+
+    Args:
+        PipelineStage (obj): Basic structure for all pipeline stages.
+    """
     def execute(self, data):
         """Execute the analytics stage of the pipeline.
 
