@@ -6,7 +6,6 @@ Este projeto conta com a seguinte estrutura de pastas:
 
 ```
 case_elo/
-├── data/                # Dados brutos e processados
 ├── notebooks/           # Notebooks Jupyter para análise e exploração
 │   ├── raw_data/        # Dados brutos
 │   ├── curated_data/    # Dados processados e organizados
