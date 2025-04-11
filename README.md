@@ -22,6 +22,9 @@ case_elo/
 │   │   ├── process_data.py  # Script para limpeza e transformação dos dados
 │   │   ├── analytics.py     # Script para análise de dados
 |   ├── pipeline.py          # Script principal que executa as funções do pipeline
+├── reports/                    # Apresentação de resultados
+│   ├── presentation.md         # montagem da apresentação em markdown
+│   ├── presentation.pdf        # apresentação em pdf
 ├── requirements.txt     # Bibliotecas para execução do projeto
 └── README.md            # Documentação do projeto
 ```
